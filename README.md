@@ -1,5 +1,6 @@
 # BruntWork Shop Android
 Demonstrate Android mobile development using Kotlin, MVVM, Retrofit, Room, RxJava, Dagger, and Data Binding.
+If the project doesn't run in Android Studio try Build > Clean Project then Build > Rebuild Project.
 
 ## Build
 [Download APK here.](https://appho.st/d/#/r0mentg7)
