@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		app:elevation="0dp">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/toolbar_content"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:paddingStart="0dp">
+
+			<androidx.appcompat.widget.AppCompatImageButton
+				style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+				android:id="@+id/back"
+				android:layout_width="24dp"
+				android:layout_height="24dp"
+				app:srcCompat="@drawable/back"
+				android:background="?selectableItemBackground"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				app:layout_constraintBottom_toBottomOf="parent"
+				android:scaleType="centerInside"
+				android:rotationY="180"/>
+
+			<TextView
+				android:id="@+id/title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				app:layout_constraintStart_toEndOf="@+id/back"
+				app:layout_constraintTop_toTopOf="parent"
+				app:layout_constraintBottom_toBottomOf="parent"
+				android:layout_marginStart="8dp"
+				android:gravity="start"
+				android:fontFamily="@font/montserrat_extrabold"
+				android:textColor="@color/primary"
+				android:textStyle="bold"
+				android:textSize="17sp"
+				android:textAlignment="viewStart"
+				android:textAllCaps="false"
+				android:text="@string/shop"/>
+
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:id="@+id/cart"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				android:gravity="end|center_vertical"
+				android:layout_gravity="end|center_vertical"
+				android:focusable="true"
+				android:clickable="true"
+				android:background="?selectableItemBackground"
+				android:paddingStart="12dp"
+				android:paddingEnd="12dp">
+
+				<androidx.appcompat.widget.AppCompatImageView
+					android:id="@+id/cartIcon"
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					app:srcCompat="@drawable/cart"
+					app:layout_constraintTop_toTopOf="parent"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					android:scaleType="centerInside"/>
+
+				<TextView
+					android:id="@+id/cartQuantity"
+					android:layout_width="32dp"
+					android:layout_height="32dp"
+					android:layout_marginStart="16dp"
+					android:layout_marginTop="4dp"
+					android:background="@drawable/background_cart_quantity"
+					app:layout_constraintTop_toTopOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					android:fontFamily="@font/montserrat_extrabold"
+					android:textSize="14sp"
+					android:gravity="center"
+					android:layout_gravity="center"
+					android:textAlignment="center"
+					android:textColor="@color/black"
+					android:visibility="gone"/>
+
+			</androidx.constraintlayout.widget.ConstraintLayout>
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+	</androidx.appcompat.widget.Toolbar>
+
+</layout>
+

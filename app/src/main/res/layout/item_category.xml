@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+	<com.google.android.material.card.MaterialCardView
+		android:id="@+id/card"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:strokeWidth="2dp"
+		app:strokeColor="@color/primary"
+		app:cardElevation="0dp"
+		app:cardUseCompatPadding="true"
+		app:cardPreventCornerOverlap="false"
+		app:cardCornerRadius="24dp"
+		android:layout_marginEnd="8dp">
+
+		<LinearLayout
+			android:id="@+id/container"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:focusable="true"
+			android:clickable="true"
+			android:background="?selectableItemBackgroundBorderless"
+			android:paddingTop="8dp"
+			android:paddingBottom="8dp"
+			android:paddingStart="12dp"
+			android:paddingEnd="12dp">
+
+			<TextView
+				android:id="@+id/name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:fontFamily="@font/montserrat_extrabold"
+				android:textColor="@color/primary"
+				android:textStyle="bold"
+				android:textSize="12sp"
+				android:textAllCaps="false"/>
+
+			<androidx.appcompat.widget.AppCompatImageButton
+				android:id="@+id/cancel"
+				android:layout_width="16dp"
+				android:layout_height="16dp"
+				android:background="?selectableItemBackground"
+				app:srcCompat="@drawable/cancel"
+				android:scaleType="centerInside"
+				android:layout_marginStart="4dp"
+				android:layout_gravity="center_vertical"
+				android:visibility="gone"/>
+
+		</LinearLayout>
+
+	</com.google.android.material.card.MaterialCardView>
+
+</layout>
+
