@@ -6,10 +6,10 @@ Demonstrate Android mobile development using Kotlin, MVVM, Retrofit, Room, RxJav
 
 ## Screenshots
 <br />
-<img src="./app/screenshots/1.png" width="200" height="350">
-<img src="./app/screenshots/2.png" width="200" height="350">
-<img src="./app/screenshots/3.png" width="200" height="350">
-<img src="./app/screenshots/4.png" width="200" height="350">
+<img src="./app/screenshots/1.png" width="150" height="350">
+<img src="./app/screenshots/2.png" width="150" height="350">
+<img src="./app/screenshots/3.png" width="150" height="350">
+<img src="./app/screenshots/4.png" width="150" height="350">
 
 ## Persistence
 I used **Room** persistence library since it is easier to code, 
